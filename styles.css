@@ -14,32 +14,34 @@ li, a, button {
     
 }
 
+
+
 .navbar {
 
-    background: linear-gradient(to top , #0d0912 ,#360910);
- height: 4%;
- display: flex;
- justify-content: center;
- align-items: center;
- font-size: 1.2rem;
- position: sticky;
+    background-color: #131114;
+    height: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
 
- top: 0;
- z-index: 999;
+    top: 0;
+    z-index: 999;
  
 }
 
 .navbar__container{
 
     display: flex;
-  justify-content: space-between;
-  height: 80px;
-  z-index: 100;
-  width: 100%;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 100;
+    width: 100%;
   
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
     
 }
 
@@ -104,7 +106,7 @@ li, a, button {
     width: 100%;
 }
 
-.button {
+.buttonNav {
 
     display: flex;
     justify-content: center;
@@ -121,10 +123,33 @@ li, a, button {
     
 }
 
-.button:hover {
+.buttonNav:hover {
     
     transition: all 0.3s ease;
     background: #cf1059;
+    
+}
+
+.button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 14px;
+    border: none;
+    outline: none;
+    background: #ff462e;
+    border-radius: 4px;
+    
+    color: white;
+    
+}
+
+.button:hover {
+    display: inline-block;
+    transition: all 0.3s ease;
+    background: #cf1059;
+    cursor: pointer;    
     
 }
 
@@ -246,7 +271,7 @@ li, a, button {
 
     }
 
-    .button {
+    .buttonNav {
 
         display: flex;
         justify-content: space-between;

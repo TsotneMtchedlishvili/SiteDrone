@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.main {
+
+    background-color: #14030f;
+    margin: 0;
+    align-items: center;
+    max-width: 100%;
+     height: auto;
+    background-position-y: -100vh;
+}
+
+.main__container{
+
+    position:relative;
+    display:grid;
+    background-color: #131114;
+    height: 70vh;
+    border-top: outset;
+    border-color: #ff2530;
+    
+}
+
+.left__container {
+    display:inline;
+    margin: 50px;
+    padding: 0 50px;
+    background-color: #3b0a1d;
+    justify-self: left;
+    background-image: url(images/Siba-car.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    height: 32vh;
+
+}
+
+.left__container h1 {
+
+    color: white;
+    align-items: center;
+    align-content: center;
+    background-image: linear-gradient(to top, #ff6464 0%, #b812ce 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-family: Lato;
+    font-weight: bolder;
+    font-size: 100px;
+    border-radius: 24px;
+    
+
+}
+
+
+
+.left__container h2 {
+
+    align-items: center;
+    align-content: center;
+    background-image: linear-gradient(-20deg, #b721ff 20%, #23d7ff);    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-family: Lato;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 30px;
+    
+
+}
+
+
+.left__container h3 {
+
+    color: antiquewhite;
+    font-family: Lato;
+    font-size: 20px;
+    margin-bottom: 30px;
+    
+
+}
+
+
+#left__container__button {
+
+    position: relative;
+    background-image: linear-gradient(to left,rgb(255, 0, 55),rgb(223, 61, 128), rgb(181, 91, 255) 40%,rgb(36, 0, 238)50%);
+    display: inline-flex;
+    -webkit-transition: max-width 1s;
+    transition: max-width 1s;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    background-size: 300%;
+    background-position-x: 100%;
+
+}
+
+#left__container__button:hover {
+    transition-delay: 0.5s;
+    transition: all 0.5s ease;
+    background-position-x: 0%;
+    
+}
+
+
+.main__img--container {
+
+    display: grid;
+    
+
+}
+
+#main__img, #BgrTxt, #BgrDrn {
+
+
+        grid-column: 1;
+        grid-row: 1;
+}
+
+.main__img--container :hover {
+ 
+    
+
+}
+
+.main__container__lower {
+
+    position: relative;
+    background: linear-gradient(to bottom , #0d0912 ,#000000);
+    max-height: 100%;
+    z-index: 4;
+    height: 48vh;
+    bottom: 4vh;
+}
+
+
+#BgrTxt {
+
+    position: relative;
+    z-index: 2;
+    align-self: center;
+    width: 100%;
+    animation: 1.5s ease-out slidein;
+    animation-timing-function: ease-out;
+
+}
+
+#BgrDrn {
+
+    position: relative;
+    z-index: 8;
+    align-self: center;
+    width: 100%;
+    animation: 2.5s ease-out slideat;
+    animation-timing-function: ease-out;
+
+
+}
+
+@keyframes slidein {
+    from {top: -50vh;}
+    to {top: 0%};
+
+
+}
+
+@keyframes slideat {
+    from {left: 100%;}
+    to {left: 0%;}
+    
+
+
+}
+
+#main__img {
+
+    padding: 0;
+    align-self: center;
+    width:100%;
+    height: auto;
+    z-index: 2;
+    
+}
+
+#main__img:hover {
+
+ 
+}
+
+
