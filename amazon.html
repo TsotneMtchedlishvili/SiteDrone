@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://static-na.payments-amazon.com/checkout.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="AmazonPayButton"></div>
+    <script src="https://static-na.payments-amazon.com/checkout.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        const amazonPayButton = amazon.Pay.renderButton('#AmazonPayButton', {
+            // set checkout environment
+            merchantId: 'merchant_id',
+            publicKeyId: 'SANDBOX-xxxxxxxxxx',
+            ledgerCurrency: 'USD',         
+            // customize the buyer experience
+            checkoutLanguage: 'en_US',
+            productType: 'PayAndShip',
+            placement: 'Cart',
+            buttonColor: 'Gold',
+            estimatedOrderAmount: { "amount": "109.99", "currencyCode": "USD"},
+            // configure Create Checkout Session request
+            createCheckoutSessionConfig: {                     
+                payloadJSON: 'payload', // string generated in step 2
+                signature: 'xxxx' // signature generated in step 3
+            }   
+        });
+    </script>
+</body>
+</html>

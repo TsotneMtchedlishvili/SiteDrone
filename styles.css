@@ -19,7 +19,7 @@ li, a, button {
 .navbar {
 
     background-color: #131114;
-    height: 4%;
+    height: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,6 +128,7 @@ li, a, button {
     transition: all 0.3s ease;
     background: #cf1059;
     
+    
 }
 
 .button {
@@ -140,17 +141,24 @@ li, a, button {
     outline: none;
     background: #ff462e;
     border-radius: 4px;
-    
+    text-decoration: none;
     color: white;
     
 }
 
 .button:hover {
-    display: inline-block;
     transition: all 0.3s ease;
     background: #cf1059;
     cursor: pointer;    
     
+}
+
+.buttontext {
+
+    text-decoration: none;
+    color:inherit;
+    font-weight: inherit;
+
 }
 
 .navbar__links:hover {
@@ -158,6 +166,7 @@ li, a, button {
 
     color: #cf1059;
   transition: all 0.3s ease;
+  
 }
 
 #Logo__IMG {

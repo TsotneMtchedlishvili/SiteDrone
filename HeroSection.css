@@ -1,37 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
+
+html, body {
+    height: 100%;
+    background-color: #131114;
+
+}
+
+
+
 .main {
 
-    background-color: #14030f;
+    background-color: #131114;
     margin: 0;
     align-items: center;
     max-width: 100%;
-     height: auto;
+    height: 100%;
     background-position-y: -100vh;
 }
 
 .main__container{
 
     position:relative;
-    display:grid;
+    width: 100%;
     background-color: #131114;
-    height: 70vh;
+    margin-bottom: 0px;
     border-top: outset;
     border-color: #ff2530;
+    display: flex;
+    height: 50vh;
     
 }
+.right__container {
+
+    margin: 50px;
+    padding: 0 50px;
+    width: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    height: 30vh;
+    font-family: lato;
+    color: aliceblue;
+
+}
+
+
+
+.right__container h1 {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+.right__container h2 {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 20px;
+
+}
+
 
 .left__container {
-    display:inline;
+
     margin: 50px;
     padding: 0 50px;
     background-color: #3b0a1d;
-    justify-self: left;
+    width: fit-content;
     background-image: url(images/Siba-car.svg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
-    height: 32vh;
+    height:fit-content;
+    
+
 
 }
 
@@ -48,7 +95,7 @@
     font-family: Lato;
     font-weight: bolder;
     font-size: 100px;
-    border-radius: 24px;
+
     
 
 }
@@ -67,7 +114,7 @@
     font-family: Lato;
     font-weight: bolder;
     font-size: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     
 
 }
@@ -78,7 +125,7 @@
     color: antiquewhite;
     font-family: Lato;
     font-size: 20px;
-    margin-bottom: 30px;
+    height: fit-content;
     
 
 }
@@ -90,6 +137,7 @@
     background-image: linear-gradient(to left,rgb(255, 0, 55),rgb(223, 61, 128), rgb(181, 91, 255) 40%,rgb(36, 0, 238)50%);
     display: inline-flex;
     -webkit-transition: max-width 1s;
+    -moz-transition: max-width 1s;
     transition: max-width 1s;
     display: inline-block;
     vertical-align: top;
@@ -97,6 +145,9 @@
     overflow: hidden;
     background-size: 300%;
     background-position-x: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    
 
 }
 
@@ -193,3 +244,132 @@
 }
 
 
+@media screen and (max-width: 769px) {
+    .main__container{
+        display:inline-block;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+        height: 88vh;
+    }
+
+    .left__container {
+        
+        margin-top: 5%;
+        background-color: #3b0a1d;
+        width: 90%;
+        background-image: url(images/Siba-car.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+        height:fit-content;
+        margin-left: 5%;
+    
+    
+    }
+    
+    .left__container h1 {
+        color: white;
+        align-items: center;
+        align-content: center;
+        background-image: linear-gradient(to top, #ff6464 0%, #b812ce 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        font-family: Lato;
+        font-weight: bolder;
+        font-size: 33px;
+        
+    
+        
+    
+    }
+    
+    
+    
+    .left__container h2 {
+
+        align-items: center;
+        align-content: center;
+        background-image: linear-gradient(-20deg, #b721ff 20%, #23d7ff);    
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        font-family: Lato;
+        font-weight: bolder;
+        font-size: 30px;
+        margin-bottom: 10px;
+        
+    
+    }
+    
+    
+    .left__container h3 {
+    
+        color: antiquewhite;
+        font-family: Lato;
+        font-size: 20px;
+        height: fit-content;
+        
+    
+    }
+    
+    
+    #left__container__button {
+    
+        position: relative;
+        background-image: linear-gradient(to left,rgb(255, 0, 55),rgb(223, 61, 128), rgb(181, 91, 255) 40%,rgb(36, 0, 238)50%);
+        display: inline-flex;
+        -webkit-transition: max-width 1s;
+        -moz-transition: max-width 1s;
+        transition: max-width 1s;
+        display: inline-block;
+        vertical-align: top;
+        white-space: nowrap;
+        overflow: hidden;
+        background-size: 300%;
+        background-position-x: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    
+    }
+
+
+    .right__container {
+        
+
+        margin: 5%;
+        padding: 0;
+        width: fit-content;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+        height: 30vh;
+        font-family: lato;
+        color: aliceblue;
+    
+    }
+
+    .right__container h1 {
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    
+    }
+
+
+    .right__container h2 {
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 20px;
+    
+    }
+
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.donate_divmain {
+    position: fixed;
+    background-color: #1e1e1f;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+}
+
+
+
+
+.donation__div {
+    position: static;
+    margin-top:16vh;
+    margin-inline: auto;
+    text-align: center;
+    background: rgb(245, 218, 218);
+    max-width: 30%;
+    padding: 0;
+    border-radius: 30px;
+    padding: 10px;
+    height: 60vh;
+    z-index: 2;
+    outline: solid;
+    outline-color: rgb(182, 182, 182);
+
+}
+
+.button{
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    width: 60%;
+    height: 50px;
+    margin: 20px auto;
+
+
+}
+
+#donation__title{
+
+    font-size: 154%;
+    justify-self: center;
+    font-family:Lato;
+}
+
+.choicefordonation{
+    display: block;
+    position: relative;
+    top: 10vh;
+    align-content: space-around;
+}
+
+#paypalbtn{
+    
+    background: url(images/paypalbtn.png);
+    background-color: #fdc43a;
+    background-size: 100%;
+    background-position-y:center;
+    color: transparent;
+}
+
+#paypalbtn:hover{
+    
+    background-color: #ebb434;
+}
+
+#amazon{
+    
+    background: url(images/Amazon.png);
+    background-size: 100%;
+    color: transparent;
+
+
+}
+
+#amazon:hover{
+    
+    background: url(images/Amazonhover.png);
+    background-size: 100%;
+}
+
+#cashapp{
+
+    background-color: rgb(0, 201, 43);
+}
+
+#cashapp:hover{
+
+    background-color: rgb(0, 122, 27);
+}
